@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: My API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/api
+    description: Local development server
+
+paths:
+  /greeting:
+    get:
+      summary: Get a greeting message
+      responses:
+        200:
+          description: A greeting message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/World'
+components:
+  schemas:
+    World:
+      type: object
+      properties:
+        condition:
+          type: string
+          example: "Habitable"
+        age:
+          type: integer
+          format: int64
+          example: 4500000000
+        size:
+          type: string
+          example: "Medium"
+        mass:
+          type: number
+          format: double
+          example: 5.972e24
+        composition:
+          type: string
+          example: "Rocky"
+        date:
+          type: string
+          format: date
+          pattern: /([0-9]{4})-(?:[0-9]{2})-([0-9]{2})/
