@@ -90,6 +90,14 @@
             <version>2.15.2</version>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.21.0</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -132,8 +140,8 @@
                         <configuration>
                             <inputSpec>${project.basedir}/src/main/resources/api.yaml</inputSpec>
                             <language>spring</language>
-                            <apiPackage>com.compea.greetings.greetingsbe.api</apiPackage>
-                            <modelPackage>com.compea.greetings.greetingsbe.model</modelPackage>
+                            <apiPackage>com.compea.greetings.api</apiPackage>
+                            <modelPackage>com.compea.greetings.model</modelPackage>
                             <configOptions>
                                 <interfaceOnly>false</interfaceOnly>
                                 <language>java</language>

@@ -1,7 +1,7 @@
-package com.compea.greetings.greetingsbe.controller;
+package com.compea.greetings.be.controller;
 
-import com.compea.greetings.greetingsbe.api.DefaultApi;
-import com.compea.greetings.greetingsbe.model.World;
+import com.compea.greetings.api.DefaultApi;
+import com.compea.greetings.model.World;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
